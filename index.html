@@ -2,39 +2,58 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Pason Auto</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
+
     <!-- Navigation -->
+
     <nav>
 
         <div class="logo">
             Pason Auto
         </div>
 
-        <div class="menu">
-            <a href="#">Home</a>
-            <a href="#">Cars</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </div>
 
-        <button onclick="showMessage()">
-            Explore Cars
-        </button>
+        <div class="menu">
+
+            <a href="#">
+                Home
+            </a>
+
+            <a href="#cars">
+                Cars
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </div>
 
     </nav>
 
 
-    <!-- Main Section -->
+
+    <!-- Hero Section -->
+
     <section class="hero">
+
 
         <div class="hero-text">
 
@@ -42,69 +61,489 @@
                 PREMIUM AUTOMOTIVE
             </p>
 
+
             <h1>
                 Drive Your
                 <span>Dream.</span>
             </h1>
+
 
             <p class="description">
                 Discover powerful, luxurious and modern cars
                 designed for people who expect more.
             </p>
 
-            <button class="main-button" onclick="showMessage()">
+
+            <button
+                class="main-button"
+                onclick="showMessage()"
+            >
                 Explore Cars
             </button>
 
         </div>
 
 
-        <div class="car-card">
 
-            <div class="car-info">
+        <!-- Pason Auto Logo -->
 
-                <h2>
-                    Mercedes-Benz
-                </h2>
+        <div class="car-info">
 
-                <p>
-                    AMG Performance
-                </p>
+            <img
+                src="images/pason-auto.png"
+                alt="Pason Auto"
+                class="hero-logo"
+            >
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- Featured Cars -->
+
+    <section
+        class="cars-section"
+        id="cars"
+    >
+
+
+        <div class="section-title">
+
+            <p>
+                OUR COLLECTION
+            </p>
+
+            <h2>
+                Featured Cars
+            </h2>
+
+        </div>
+
+
+
+        <div class="cars-grid">
+
+
+
+            <!-- BMW M4 -->
+
+            <div class="car-item">
+
+                <img
+                    src="images/bmw.jpg"
+                    alt="BMW M4"
+                >
+
+
+                <div class="car-item-info">
+
+                    <h3>
+                        BMW M4
+                    </h3>
+
+
+                    <button
+                        onclick="showCarDetails('BMW M4')"
+                    >
+                        View Details
+                    </button>
+
+                </div>
 
             </div>
 
-            <div class="car-image">
-                🚘
+
+
+            <!-- Porsche 911 GT3 RS -->
+
+            <div class="car-item">
+
+                <img
+                    src="images/porsche.jpg"
+                    alt="Porsche 911 GT3 RS"
+                >
+
+
+                <div class="car-item-info">
+
+                    <h3>
+                        Porsche 911 GT3 RS
+                    </h3>
+
+
+                    <button
+                        onclick="showCarDetails('Porsche 911 GT3 RS')"
+                    >
+                        View Details
+                    </button>
+
+                </div>
+
             </div>
+
+
+
+            <!-- Mercedes CLS 63 AMG -->
+
+            <div class="car-item">
+
+                <img
+                    src="images/cls63.jpg"
+                    alt="Mercedes-Benz CLS 63 AMG"
+                >
+
+
+                <div class="car-item-info">
+
+                    <h3>
+                        Mercedes-Benz CLS 63 AMG
+                    </h3>
+
+
+                    <button
+                        onclick="showCarDetails('Mercedes-Benz CLS 63 AMG')"
+                    >
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
 
         </div>
 
     </section>
+
+
+
+    <!-- About Section -->
+
+    <section
+        class="about-section"
+        id="about"
+    >
+
+
+        <div class="about-content">
+
+
+            <p class="small-title">
+                ABOUT PASON AUTO
+            </p>
+
+
+            <h2>
+                Driven by
+                <span>Passion.</span>
+            </h2>
+
+
+            <p>
+                Pason Auto is a premium automotive platform
+                focused on powerful, luxurious and high-performance
+
+                vehicles.
+            </p>
+
+
+            <p>
+                Our goal is to bring exceptional cars together
+                in one modern and elegant experience.
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- Contact Section -->
+
+    <section
+        class="contact-section"
+        id="contact"
+    >
+
+
+        <div class="contact-content">
+
+
+            <p class="small-title">
+                CONTACT PASON AUTO
+            </p>
+
+
+            <h2>
+                Let's Talk
+            </h2>
+
+
+            <p>
+                Have a question about one of our vehicles?
+                Get in touch with Pason Auto.
+            </p>
+
+
+
+            <!-- Contact Information -->
+
+            <div class="contact-info">
+
+
+                <div>
+
+                    <strong>
+                        Phone
+                    </strong>
+
+                    <span>
+                        +93 766 204 143
+                    </span>
+
+                </div>
+
+
+
+                <div>
+
+                    <strong>
+                        Email
+                    </strong>
+
+                    <span>
+                        Pasonmajroh@gmail.com
+                    </span>
+
+                </div>
+
+
+
+                <div>
+
+                    <strong>
+                        Location
+                    </strong>
+
+                    <span>
+                        Shahr-e-Naw, Taimani Street 5,
+                        Pason Auto, Kabul, Afghanistan
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Contact Form -->
+
+            <div class="contact-form">
+
+
+                <h3>
+                    Send Us a Message
+                </h3>
+
+
+                <form onsubmit="sendMessage(event)">
+
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your Name"
+                        required
+                    >
+
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Your Email"
+                        required
+                    >
+
+
+                    <textarea
+                        id="message"
+                        placeholder="Your Message"
+                        rows="6"
+                        required
+                    ></textarea>
+
+
+                    <button type="submit">
+                        Send Message
+                    </button>
+
+
+                </form>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
 
 
     <!-- Features -->
+
     <section class="features">
 
-        <div class="feature">
-            <h3>01</h3>
-            <p>Powerful Engine</p>
-        </div>
 
         <div class="feature">
-            <h3>02</h3>
-            <p>Luxury Interior</p>
+
+            <h3>
+                01
+            </h3>
+
+            <p>
+                Powerful Engine
+            </p>
+
         </div>
 
+
+
         <div class="feature">
-            <h3>03</h3>
-            <p>Modern Technology</p>
+
+            <h3>
+                02
+            </h3>
+
+            <p>
+                Luxury Interior
+            </p>
+
         </div>
+
+
+
+        <div class="feature">
+
+            <h3>
+                03
+            </h3>
+
+            <p>
+                Modern Technology
+            </p>
+
+        </div>
+
 
     </section>
 
 
+
+    <!-- Car Details Modal -->
+
+    <div
+        class="car-modal"
+        id="carModal"
+    >
+
+
+        <div class="modal-content">
+
+
+            <button
+                class="close-modal"
+                onclick="closeCarDetails()"
+            >
+                ×
+            </button>
+
+
+            <img
+                id="modalImage"
+                src=""
+                alt="Car"
+            >
+
+
+            <div class="modal-info">
+
+
+                <p id="modalType"></p>
+
+
+                <h2 id="modalTitle"></h2>
+
+
+                <p id="modalDescription"></p>
+
+
+
+                <div class="modal-specs">
+
+
+                    <div>
+
+                        <span>
+                            Engine
+                        </span>
+
+                        <strong id="modalEngine"></strong>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <span>
+
+                            Power
+                        </span>
+
+                        <strong id="modalPower"></strong>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <span>
+                            Price
+                        </span>
+
+                        <strong id="modalPrice"></strong>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- JavaScript -->
+
     <script src="script.js"></script>
+
 
 </body>
 
 </html>
+
